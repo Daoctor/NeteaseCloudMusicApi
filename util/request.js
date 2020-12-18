@@ -51,6 +51,7 @@ const createRequest = (method, url, data, options) => {
       headers['Referer'] = 'https://music.163.com'
     if (options.realIP) headers['X-Real-IP'] = options.realIP
     // headers['X-Real-IP'] = '118.88.88.88'
+    headers["X-Real-IP"] = "211.161.244.70"
     if (typeof options.cookie === 'object')
       headers['Cookie'] = Object.keys(options.cookie)
         .map(
